@@ -1,3 +1,4 @@
+'use strict';
 const API_KEY = 'AIzaSyDgwDsmtKujjcLVeq_ZQhveaOjQIoeeCgE';
 
 /*
@@ -37,6 +38,7 @@ const BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
 //    as the last argument
 //
 // TEST IT! Execute this function and console log the results inside the callback.
+
 const fetchVideos = function(searchTerm, callback) {
 
 };
