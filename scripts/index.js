@@ -259,7 +259,7 @@ const decorateResponse = function (response) {
   });
 };
 
-
+// console.log(decorateResponse(MOCK_API));
 /**
  * @function generateVideoItemHtml
  * Template function, creates an HTML string from a single decorated video object
@@ -270,8 +270,12 @@ const decorateResponse = function (response) {
 // 1. Using the decorated object, return an HTML string containing all the expected
 // TEST IT!
 const generateVideoItemHtml = function (video) {
-
+return `<li data-video-id="${video.id}"> 
+<img src="${video.thumbnail}">
+<h1>${video.title}</h1></li>
+`
 };
+
 
 /**
  * @function addVideosToStore
@@ -282,8 +286,9 @@ const generateVideoItemHtml = function (video) {
 // 1. Set the received array as the value held in store.videos
 // TEST IT!
 const addVideosToStore = function (videos) {
-
+  store.videos = videos;
 };
+
 
 
 /**
