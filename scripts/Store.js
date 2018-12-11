@@ -1,7 +1,13 @@
-//store, 
 
-const videos = [];
+const store = (function () {
+    const videos= [];
 
-function setVideos(videos){
+const setVideos = function(videos){
     this.videos = videos;
 }
+
+return {
+videos,
+setVideos
+}
+}());
