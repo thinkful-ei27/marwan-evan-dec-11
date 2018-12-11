@@ -290,7 +290,6 @@ const addVideosToStore = function (videos) {
 };
 
 
-
 /**
  * @function render
  * Responsible for scanning store and rendering the video list to DOM
